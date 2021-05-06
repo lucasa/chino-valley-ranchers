@@ -1,9 +1,9 @@
 {
-    "image": "/images/hero-products.jpg",
-    "heading": "Pasture Raised Products",
-    "content": {
-        "heading": "Happy Chickens Make Better Eggs",
-        "subheading": "Chino Valley Ranchers hens eat better feed and run free on open fields. That’s why they lay healthier, all natural eggs. Try our products and taste the difference.",
-        "image": "/images/bg-paper-edge.png"
-    }
+  "image": "/images/hero-products.jpg",
+  "heading": "Pasture Raised Product",
+  "content": {
+    "heading": "Happy Chickens Make Better Eggs",
+    "subheading": "Chino Valley Ranchers hens eat better feed and run free on open fields. That’s why they lay healthier, all natural eggs. Try our products and taste the difference.",
+    "image": "/images/bg-paper-edge.png"
+  }
 }
