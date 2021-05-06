@@ -1,19 +1,13 @@
 import Head from 'next/head'
+import { getGithubPreviewProps, parseJson } from 'next-tinacms-github'
 
 import { Nav } from '../../components/Nav'
 import { Hero } from '../../components/hero/Hero'
 import { HeadingPaperEdge } from '../../components/heading/HeadingPaperEdge'
 
-export default function Products() {
+export default function Products({ file }) {
 
-  const image = '/images/hero-products.jpg'
-  const heading = 'Pasture Raised Products'
-
-  const content = {
-      heading: 'Happy Chickens Make Better Eggs',
-      subheading: 'Chino Valley Ranchers hens eat better feed and run free on open fields. That’s why they lay healthier, all natural eggs. Try our products and taste the difference.',
-      image: '/images/bg-paper-edge.png'
-  }
+  const data = file.data
 
   return (
 
@@ -24,10 +18,36 @@ export default function Products() {
       </Head>
 
       <Nav />
-      <Hero image={image} heading={heading} />
-      <HeadingPaperEdge content={content} />
+      <Hero image={data.image} heading={data.heading} />
+      <HeadingPaperEdge content={data.content} />
 
     </div>
 
   )
+}
+
+export const getStaticProps = async function({
+  preview,
+  previewData,
+}) {
+  if (preview) {
+    return getGithubPreviewProps({
+    ...previewData,
+    fileRelativePath: 'content/products.json',
+    parse: parseJson,
+    })
+  }
+
+  return {
+    props: {
+      sourceProvider: null,
+      error: null,
+      preview: false,
+      file: {
+        fileRelativePath: 'content/products.json',
+        data: (await import('../../content/products.json')).default,
+      },
+    },
+  }
+
 }
