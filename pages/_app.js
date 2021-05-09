@@ -11,7 +11,7 @@ import {
   GithubMediaStore,
 } from 'react-tinacms-github'
 
-import {EditLink} from '../components/tinacms/EditLink'
+import { EditLink } from '../components/tinacms/EditLink'
 
 function MyApp({ Component, pageProps }) {
 
