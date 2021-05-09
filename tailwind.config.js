@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         'ultra': ['Ultra'],
         'lato': ['Lato'],
+        'din': ['din-condensed', 'sans-serif'],
       },
       colors: {
         'chinored': '#b01116'

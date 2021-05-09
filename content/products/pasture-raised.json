@@ -1,0 +1,15 @@
+{
+    "name": "Pasture Raised",
+    "order": 4,
+    "description": "Our Organic Free-Range eggs come from hens that live on free-range farms and fed only the finest organic (non-GMO) grains & seeds from certified pesticide-free fields.",
+    "photo": {
+      "src": "/images/products/pasture-raised.png",
+      "alt": "Organic Omega-3 Soy Free Eggs"
+    },
+    "button": {
+      "link": {
+        "url": "#"
+      },
+      "text": "Learn More"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Organic",
+    "order": 1,
+    "description": "Our organic free-range eggs come from hens that live on free-range farms and fed only the finest organic (non-GMO) grains and seeds from certifide pesticide-free fields.",
+    "photo": {
+      "src": "/images/products/organic.png",
+      "alt": "Organic Eggs"
+    },
+    "button": {
+      "link": {
+        "url": "#"
+      },
+      "text": "Learn More"
+    }
+}

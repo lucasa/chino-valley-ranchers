@@ -1,5 +1,7 @@
 import "@fontsource/ultra"
 import 'typeface-lato'
+import Head from 'next/head'
+
 import '../styles/globals.css'
 
 import { TinaCMS, TinaProvider } from 'tinacms'
@@ -41,19 +43,24 @@ function MyApp({ Component, pageProps }) {
   })
 
   return (
-    <TinaProvider cms={cms}>
-      <TinacmsGithubProvider
-        onLogin={onLogin}
-        onLogout={onLogout}
-        error={pageProps.error}
-      >
-        {/**
-          * 6. Add a button for entering Preview/Edit Mode
-          */}
-        <EditLink cms={cms} />
-        <Component {...pageProps} />
-      </TinacmsGithubProvider>
-    </TinaProvider>
+    <>
+      <Head>
+        <link rel="stylesheet" href="https://use.typekit.net/yyq5ssh.css"></link>
+      </Head>
+      <TinaProvider cms={cms}>
+        <TinacmsGithubProvider
+          onLogin={onLogin}
+          onLogout={onLogout}
+          error={pageProps.error}
+        >
+          {/**
+            * 6. Add a button for entering Preview/Edit Mode
+            */}
+          <EditLink cms={cms} />
+          <Component {...pageProps} />
+        </TinacmsGithubProvider>
+      </TinaProvider>
+    </>
   )
 }
 

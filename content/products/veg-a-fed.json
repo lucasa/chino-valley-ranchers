@@ -1,0 +1,15 @@
+{
+    "name": "Veg-A-Fed",
+    "order": 5,
+    "description": "Our Organic Omega-3 eggs come from hens raised in free roaming environments and fed a special organic diet that contains flax seed—a grain naturally high in Omega-3 fatty acids.",
+    "photo": {
+      "src": "/images/products/veg-a-fed.png",
+      "alt": "Organic Omega-3 Soy Free Eggs"
+    },
+    "button": {
+      "link": {
+        "url": "#"
+      },
+      "text": "Learn More"
+    }
+}
