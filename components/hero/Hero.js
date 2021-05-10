@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import { InlineTextarea } from 'react-tinacms-inline'
 
 export function Hero(props) {
 
-    const {image, heading} = props
+    //const {image, heading} = props
+    const {image} = props
 
     return(
 
@@ -17,7 +19,7 @@ export function Hero(props) {
             </div>
 
             <div className="max-w-5xl mx-auto z-40 text-center">
-                <h1 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide">{heading}</h1>
+                <h1 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide"><InlineTextarea name="heading" /></h1>
             </div>
         </div>
 

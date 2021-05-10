@@ -10,7 +10,8 @@ module.exports = {
         'din': ['din-condensed', 'sans-serif'],
       },
       colors: {
-        'chinored': '#b01116'
+        'chinored': '#b01116',
+        'chinoyellow': '#f9a115'
       }
     },
   },
