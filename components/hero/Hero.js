@@ -17,19 +17,7 @@ export function Hero(props) {
                     }}
                     uploadDir={() => "/public/images"}
                     alt="Organic Eggs"
-                    >
-                    {(props) => (
-                        <div
-                        className="relative"
-                        >
-                        <Image
-                            src={props.image.src || "https://source.unsplash.com/random"}
-                            layout="fill"
-                            objectFit="cover"
-                        />
-                        </div>
-                    )}
-                </InlineImage>
+                />
                 {/*<Image
                     src={image}
                     className="h-full w-full object-cover min-h-[300px] lg:min-h-[516px]"

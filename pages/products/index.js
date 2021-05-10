@@ -9,9 +9,8 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 import { Nav } from '../../components/Nav'
-import { Hero } from '../../components/hero/Hero'
-import { heroBlock } from '../../components/hero/Hero';
-import { HeadingPaperEdge } from '../../components/heading/HeadingPaperEdge'
+import { heroBlock } from '../../components/hero/Hero'
+import { contentBlock } from '../../components/heading/HeadingPaperEdge'
 import { ProductsList } from '../../components/products/ProductsList'
 import { ContentWithImage } from '../../components/content/ContentWithImage'
 import { ContentSingleColumn } from '../../components/content/ContentSingleColumn'
@@ -27,12 +26,31 @@ export default function Products({ file, isPreview, products }) {
     label: 'Products Page',
     fields: [
       {
+        label: 'Heading',
         name: 'heading',
         component: 'text'
       },
       {
+        label: 'Image',
         name: 'image',
         component: 'image'
+      },
+      {
+        label: 'Content',
+        name: 'content',
+        component: 'group',
+        fields: [
+          {
+            label: 'Heading',
+            name: 'heading',
+            component: 'text'
+          },
+          {
+            label: 'Sub Heading',
+            name: 'subheading',
+            component: 'text'
+          }
+        ]
       }
     ],
     onSubmit() {
@@ -75,6 +93,7 @@ export default function Products({ file, isPreview, products }) {
 
 const PAGE_BLOCKS = {
   hero: heroBlock,
+  content: contentBlock
 }
 
 export const getStaticProps = async function({
