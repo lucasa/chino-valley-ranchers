@@ -11,10 +11,13 @@ import path from 'path'
 import { Nav } from '../../components/Nav'
 import { heroBlock } from '../../components/hero/Hero'
 import { contentBlock } from '../../components/heading/HeadingPaperEdge'
+import { productsBlock } from '../../components/products/ProductsList'
 import { ProductsList } from '../../components/products/ProductsList'
 import { ContentWithImage } from '../../components/content/ContentWithImage'
 import { ContentSingleColumn } from '../../components/content/ContentSingleColumn'
 import { ContentSingleColumnTwo } from '../../components/content/ContentSingleColumnTwo'
+
+import { ProductsWrapper } from '../../context/products'
 
 export default function Products({ file, isPreview, products }) {
 
@@ -75,17 +78,19 @@ export default function Products({ file, isPreview, products }) {
 
       <Nav />
       {/* TODO - Inline Blocks */}
-      <InlineForm form={form}>
-        {/*
-        <Hero image={data.image} heading={data.heading} />
-        <HeadingPaperEdge content={data.content} />
+      <ProductsWrapper products={products}>
+        <InlineForm form={form}>
+          {/*
+          <Hero image={data.image} heading={data.heading} />
+          <HeadingPaperEdge content={data.content} />
 
-        <ContentWithImage content={data.contentWithImage} />
-        <ContentSingleColumn content={data.contentSingleColumn} />
-        <ContentSingleColumnTwo content={data.contentSingleColumnTwo} />
-        */}
-        <InlineBlocks name="blocks" blocks={PAGE_BLOCKS} />
-      </InlineForm>
+          <ContentWithImage content={data.contentWithImage} />
+          <ContentSingleColumn content={data.contentSingleColumn} />
+          <ContentSingleColumnTwo content={data.contentSingleColumnTwo} />
+          */}
+          <InlineBlocks name="blocks" blocks={PAGE_BLOCKS} />
+        </InlineForm>
+      </ProductsWrapper>
     </div>
 
   )
@@ -93,7 +98,8 @@ export default function Products({ file, isPreview, products }) {
 
 const PAGE_BLOCKS = {
   hero: heroBlock,
-  content: contentBlock
+  content: contentBlock,
+  products: productsBlock
 }
 
 export const getStaticProps = async function({

@@ -1,10 +1,16 @@
+import { useState } from 'react'
 import Image from 'next/image'
+import { InlineTextarea, InlineImage, BlocksControls } from 'react-tinacms-inline'
 
+import { useProductsContext } from '../../context/products'
 import { Button } from '../../components/button/Button'
 
 export function ProductsList(props) {
 
-    const {products, background} = props
+    //const {products, background} = props
+
+    const productsContext = useProductsContext()
+    const [products, setProducts] = useState(productsContext)
 
     console.log(products)
 
@@ -17,7 +23,7 @@ export function ProductsList(props) {
 
         <div className="relative -top-12">
                 {parsedProducts.map((product, index) => (
-                    <div key={index} className="relative bg-repeat-y bg-cover" style={{ backgroundImage: `url(${background})` }}>
+                    <div key={index} className="relative bg-repeat-y bg-cover" style={{ backgroundImage: `url('/images/bg-paper.png')` }}>
                         <div className="max-w-7xl mx-auto">
                             <div className="grid grid-cols-12 lg:gap-8 pb-24 lg:pb-32 px-8 xl:px-0 overflow-hidden">
                                 <div className="col-span-12 lg:col-span-5">
@@ -57,4 +63,17 @@ export function ProductsList(props) {
         </div>
     )
 
+}
+
+export const productsBlock = {
+    Component: ({ index }) => (
+      <BlocksControls index={index}>
+        <ProductsList />
+      </BlocksControls>
+    ),
+    template: {
+        label: 'Product List',
+        defaultItem: {},
+        fields: [],
+    },
 }

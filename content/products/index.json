@@ -1,83 +1,19 @@
 {
-    "image": {
-      "src": "/images/hero-products.jpg",
-      "alt": "American Humane Certified Eggs"
+  "blocks": [
+    {
+      "_template": "hero",
+      "heading": "Pasture Raised Eggs",
+      "image": "/images/hero-products.jpg"
     },
-    "heading": "Pasture Raised Product",
-    "content": {
-      "heading": "Happy Chickens Make Better Eggs",
-      "subheading": "Chino Valley Ranchers hens eat better feed and run free on open fields. That’s why they lay healthier, all natural eggs. Try our products and taste the difference.",
+    {
+      "_template": "content",
+      "heading": "Some Headline Here",
+      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "image": "/images/bg-paper-edge.png"
     },
-    "products": {
-      "background": "/images/bg-paper.png"
-    },
-    "contentWithImage": {
-      "background": "/images/dirt-background.png",
-      "content": {
-        "heading": "Food Servicee Bulk Orders",
-        "text": [
-          "At Chino Valley Ranchers, we are committed to bringing you the very best in Organic & Cage Free Liquid Egg Whites, Shell Eggs & Yolk Products. We offer more than 70 items ideal for the Food Service, Commercial, and Bulk channels."
-        ],
-        "button": {
-          "link": {
-            "url": "#"
-          },
-          "text": "View Pricing"
-        }
-      },
-      "image": {
-        "src": "/images/chickens.png",
-        "alt": "Chickens"
-      }
-    },
-    "contentSingleColumn": {
-      "background": "/images/blue-bg.png",
-      "content": [
-        {
-          "heading": "Better For Our Hens",
-          "subheading": "Our pasture raised hens enjoy the outdoors and all the benefits that come with the freedom to roam wild and free."
-        },
-        {
-          "heading": "Better For Our Eggs",
-          "subheading": "Natural pastures, plants and bugs - what else could be better for a hen? That's why pasture raised eggs are more flavorful and nutricious!"
-        },
-        {
-          "heading": "Better For You",
-          "subheading": "Happier hens make higher quality eggs to support a healthier you. It's that simple."
-        }
-      ]
-    },
-    "contentSingleColumnTwo": {
-      "background": "/images/bg-paper-edge.png",
-      "background_bottom": "/images/bg-paper.png",
-      "content": [
-        {
-          "image": {
-            "src": "/images/american-humane-certified.png",
-            "alt": "American Humane Certified Eggs"
-          }
-        },
-        {
-          "subheading": "Our passion for quality egg production practices dates back to our early beginnings. Along the way, we’ve received various certifications to assure our customers of our commitment to the highest standards. Chino Valley Ranchers pasture raised eggs are certified by American Humane and carry the American Humane Certified seal."
-        },
-        {
-          "subheading": "Our passion for quality egg production permeates all operations and every employee is personally responsible for doing their part. Company employees and all personnel follow American Humane’s strict requirements for documentation, inspections, equipment maintenance, and access to feed and water. Maintaining pasture raised quality demands extra attention, but we believe it’s worth it."
-        },
-        {
-          "heading": "Proudly Pasture Raised For You"
-        },
-        {
-          "subheading": "From our family to yours, Chino Valley Ranchers pasture raised eggs are produced with your health and well-being in mind."
-        },
-        {
-          "button": {
-            "link": {
-              "url": "#"
-            },
-            "text": "Find a Store Near You"
-          }
-        }
-      ]
+    {
+      "_template": "products"
     }
+  ]
+
   }
