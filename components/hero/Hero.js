@@ -16,7 +16,7 @@ export function Hero(props) {
                         return `/${media.id}`;
                     }}
                     uploadDir={() => "/public/images"}
-                    alt={props.image.alt}
+                    alt="Organic Eggs"
                     >
                     {(props) => (
                         <div
