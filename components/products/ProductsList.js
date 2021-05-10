@@ -11,8 +11,9 @@ export function ProductsList(props) {
 
     const productsContext = useProductsContext()
     const [products, setProducts] = useState(productsContext)
+    //const [products, setProducts] = useState([])
 
-    console.log(products)
+    //console.log(products)
 
     const parsedProducts = products.map(product => JSON.parse(product.content))
     parsedProducts.sort(function (a, b) {
