@@ -1,5 +1,8 @@
 {
-    "image": "/images/hero-products.jpg",
+    "image": {
+      "src": "/images/hero-products.jpg",
+      "alt": "American Humane Certified Eggs"
+    },
     "heading": "Pasture Raised Product",
     "content": {
       "heading": "Happy Chickens Make Better Eggs",

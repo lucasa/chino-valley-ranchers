@@ -10,6 +10,7 @@ import path from 'path'
 
 import { Nav } from '../../components/Nav'
 import { Hero } from '../../components/hero/Hero'
+import { heroBlock } from '../../components/hero/Hero';
 import { HeadingPaperEdge } from '../../components/heading/HeadingPaperEdge'
 import { ProductsList } from '../../components/products/ProductsList'
 import { ContentWithImage } from '../../components/content/ContentWithImage'
@@ -29,6 +30,10 @@ export default function Products({ file, isPreview, products }) {
         name: 'heading',
         component: 'text'
       },
+      {
+        name: 'image',
+        component: 'image'
+      }
     ],
     onSubmit() {
       cms.alerts.success('Saved!')
@@ -36,7 +41,8 @@ export default function Products({ file, isPreview, products }) {
   }
 
   // Registers a JSON Tina Form
-  const [data, form] = useGithubJsonForm(file, formConfig)
+  //const [data, form] = useGithubJsonForm(file, formConfig)
+  const [, form] = useGithubJsonForm(file, formConfig)
   usePlugin(form)
 
   useGithubToolbarPlugins()
@@ -52,16 +58,23 @@ export default function Products({ file, isPreview, products }) {
       <Nav />
       {/* TODO - Inline Blocks */}
       <InlineForm form={form}>
+        {/*
         <Hero image={data.image} heading={data.heading} />
         <HeadingPaperEdge content={data.content} />
-        <ProductsList products={products} background={data.products.background} />
+
         <ContentWithImage content={data.contentWithImage} />
         <ContentSingleColumn content={data.contentSingleColumn} />
         <ContentSingleColumnTwo content={data.contentSingleColumnTwo} />
+        */}
+        <InlineBlocks name="blocks" blocks={PAGE_BLOCKS} />
       </InlineForm>
     </div>
 
   )
+}
+
+const PAGE_BLOCKS = {
+  hero: heroBlock,
 }
 
 export const getStaticProps = async function({

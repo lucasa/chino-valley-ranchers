@@ -1,21 +1,42 @@
 import Image from 'next/image'
-import { InlineTextarea } from 'react-tinacms-inline'
+import { InlineTextarea, InlineImage, BlocksControls } from 'react-tinacms-inline'
 
 export function Hero(props) {
 
     //const {image, heading} = props
-    const {image} = props
+    //const {image} = props
 
     return(
 
         <div className="relative overflow-hidden lg:overflow-visible z-40 lg:z-0 w-full min-h-[300px] lg:min-h-[516px] flex items-center">
             <div className="absolute w-full min-h-[300px] lg:min-h-[516px]">
-                <Image
+                <InlineImage
+                    name="image"
+                    parse={(media) => {
+                        return `/${media.id}`;
+                    }}
+                    uploadDir={() => "/public/images"}
+                    alt={props.image.alt}
+                    >
+                    {(props) => (
+                        <div
+                        className="relative"
+                        >
+                        <Image
+                            src={props.image.src || "https://source.unsplash.com/random"}
+                            layout="fill"
+                            objectFit="cover"
+                        />
+                        </div>
+                    )}
+                </InlineImage>
+                {/*<Image
                     src={image}
                     className="h-full w-full object-cover min-h-[300px] lg:min-h-[516px]"
                     layout="fill"
                     alt="Chino Valley Ranchers"
                 />
+                */}
             </div>
 
             <div className="max-w-5xl mx-auto z-40 text-center">
@@ -25,4 +46,22 @@ export function Hero(props) {
 
     )
 
+}
+
+export const heroBlock = {
+    Component: ({ index }) => (
+      <BlocksControls index={index}>
+        <Hero />
+      </BlocksControls>
+    ),
+    template: {
+        label: 'Hero',
+        defaultItem: {
+            heading: 'Some Headline Here',
+            image: '/images/hero-products.jpg'
+        },
+        fields: [
+
+        ],
+    },
 }

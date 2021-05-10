@@ -6,6 +6,8 @@ export function ProductsList(props) {
 
     const {products, background} = props
 
+    console.log(products)
+
     const parsedProducts = products.map(product => JSON.parse(product.content))
     parsedProducts.sort(function (a, b) {
         return a.order - b.order;
