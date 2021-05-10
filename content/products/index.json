@@ -12,7 +12,39 @@
       "image": "/images/bg-paper-edge.png"
     },
     {
-      "_template": "products"
+      "_template": "products",
+      "products": [
+        {
+          "name": "Sample Product",
+          "order": 1,
+          "description": "Our Organic Omega-3 eggs come from hens raised in free roaming environments and fed a special organic diet that contains flax seed—a grain naturally high in Omega-3 fatty acids.",
+          "photo": {
+            "src": "/images/products/humane-harvest.png",
+            "alt": "Organic Eggs"
+          },
+          "button": {
+            "link": {
+              "url": "#"
+            },
+            "text": "Learn More"
+          }
+        },
+        {
+          "name": "Another Sample",
+          "order": 2,
+          "description": "Our Organic Omega-3 eggs come from hens raised in free roaming environments and fed a special organic diet that contains flax seed—a grain naturally high in Omega-3 fatty acids.",
+          "photo": {
+            "src": "/images/products/humane-harvest.png",
+            "alt": "Organic Eggs"
+          },
+          "button": {
+            "link": {
+              "url": "#"
+            },
+            "text": "Learn More"
+          }
+        }
+      ]
     }
   ]
 
