@@ -2,14 +2,14 @@
   "blocks": [
     {
       "_template": "hero",
-      "heading": "Pasture Raised Eggs",
-      "image": "/public/images/hero-products.jpg"
+      "heading": "Pasture Raised Products",
+      "image": "//images/hero-products.jpg"
     },
     {
       "_template": "content",
-      "heading": "Some Headline Here",
-      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "image": "/images/bg-paper-edge.png"
+      "heading": "Happy Chickens Make Better Eggs",
+      "image": "/images/bg-paper-edge.png",
+      "subheading": "Chino Valley Ranchers hens eat better feed and run free on open fields. That's why they lay healthier, all natural eggs. Try our products and taste the difference."
     },
     {
       "_template": "products",
@@ -51,16 +51,16 @@
       "blocks": [
         {
           "_template": "paragraph",
-          "text": "tesst"
+          "text": "At Chino Valley Ranchers, we are committed to bringing you the very best in Organic & Cage Free Liquid Egg Whites, Shell Eggs & Yolk Products. We offer more than 70 items ideal for the Food Service, Commercial, and Bulk channels."
         }
       ],
       "content": {
-        "heading": "Some Heading Here",
+        "heading": "Food Service Bulk Orders",
         "text": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. Parturient montes nascetur ridiculus mus mauris vitae. Mus mauris vitae ultricies leo. Diam quam nulla porttitor massa id neque aliquam vestibulum."
         ],
         "image": {
-          "src": "public/images/chickens.png",
+          "src": "/images/chickens.png",
           "alt": "Organic Fed Chickens"
         },
         "button": {
