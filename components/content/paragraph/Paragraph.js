@@ -9,7 +9,7 @@ export function Paragraph(props) {
     )
 }
 
-export const paragraphBlock = {
+/*export const paragraphBlock = {
     Component: ({ index, data }) => (
       <BlocksControls index={index}>
         <Paragraph />
@@ -24,4 +24,4 @@ export const paragraphBlock = {
 
         ],
     },
-}
+}*/

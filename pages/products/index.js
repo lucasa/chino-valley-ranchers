@@ -13,6 +13,7 @@ import { heroBlock } from '../../components/hero/Hero'
 import { contentBlock } from '../../components/heading/HeadingPaperEdge'
 import { productsBlock } from '../../components/products/ProductsList'
 import { contentWithImageBlock } from '../../components/content/ContentWithImage'
+import { contentSingleColumnBlock } from '../../components/content/ContentSingleColumn'
 import { ContentWithImage } from '../../components/content/ContentWithImage'
 import { ContentSingleColumn } from '../../components/content/ContentSingleColumn'
 import { ContentSingleColumnTwo } from '../../components/content/ContentSingleColumnTwo'
@@ -100,7 +101,8 @@ const PAGE_BLOCKS = {
   hero: heroBlock,
   content: contentBlock,
   products: productsBlock,
-  contentWithImage: contentWithImageBlock
+  contentWithImage: contentWithImageBlock,
+  contentSingleColumn: contentSingleColumnBlock
 }
 
 export const getStaticProps = async function({
