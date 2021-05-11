@@ -3,7 +3,7 @@
     {
       "_template": "hero",
       "heading": "Pasture Raised Products",
-      "image": "//images/hero-products.jpg"
+      "image": "/images/hero-products.jpg"
     },
     {
       "_template": "content",
