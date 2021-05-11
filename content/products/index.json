@@ -3,7 +3,7 @@
     {
       "_template": "hero",
       "heading": "Pasture Raised Eggs",
-      "image": "/images/hero-products.jpg"
+      "image": "/public/images/hero-products.jpg"
     },
     {
       "_template": "content",
@@ -60,7 +60,7 @@
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. Parturient montes nascetur ridiculus mus mauris vitae. Mus mauris vitae ultricies leo. Diam quam nulla porttitor massa id neque aliquam vestibulum."
         ],
         "image": {
-          "src": "/images/chickens.png",
+          "src": "public/images/chickens.png",
           "alt": "Organic Fed Chickens"
         },
         "button": {
@@ -70,5 +70,4 @@
       }
     }
   ]
-
-  }
+}
