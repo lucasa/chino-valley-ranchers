@@ -15,7 +15,7 @@ export function Hero(props) {
                     parse={(media) => {
                         return `/${media.id}`;
                     }}
-                    uploadDir={() => "/images/"}
+                    uploadDir={() => "images/"}
                     alt="Organic Eggs"
                 />
                 {/*<Image
