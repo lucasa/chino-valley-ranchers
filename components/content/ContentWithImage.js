@@ -31,9 +31,7 @@ export function ContentWithImage({data, index}) {
                                 }
                             ]}
                             >
-                            <Button button={data.content.button}>
-                                <InlineText name="text" />
-                            </Button>
+                            <Button button={data.content.button} />
                         </InlineGroup>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
