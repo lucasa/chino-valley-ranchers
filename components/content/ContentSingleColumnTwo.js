@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { InlineText, InlineTextarea, InlineBlocks, InlineImage, BlocksControls, InlineGroup } from 'react-tinacms-inline'
 
 import { Button } from '../../components/button/Button'
 import { HeadingAlt } from '../../components/heading/HeadingAlt'
