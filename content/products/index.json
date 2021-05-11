@@ -17,7 +17,7 @@
         {
           "name": "Sample Product",
           "order": 1,
-          "description": "Our Organic Omega-3 eggs come from hens raised in free roaming environments and fed a special organic diet that contains flax seed—a grain naturally high in Omega-3 fatty acids.",
+          "description": "These are just placeholder products for the product list block, to edit which products show up here you can use edit via the /admin/products page.",
           "photo": {
             "src": "/images/products/humane-harvest.png",
             "alt": "Organic Eggs"
@@ -32,7 +32,7 @@
         {
           "name": "Another Sample",
           "order": 2,
-          "description": "Our Organic Omega-3 eggs come from hens raised in free roaming environments and fed a special organic diet that contains flax seed—a grain naturally high in Omega-3 fatty acids.",
+          "description": "These are just placeholder products for the product list block, to edit which products show up here you can use edit via the /admin/products page.",
           "photo": {
             "src": "/images/products/humane-harvest.png",
             "alt": "Organic Eggs"
@@ -45,6 +45,29 @@
           }
         }
       ]
+    },
+    {
+      "_template": "contentWithImage",
+      "blocks": [
+        {
+          "_template": "paragraph",
+          "text": "tesst"
+        }
+      ],
+      "content": {
+        "heading": "Some Heading Here",
+        "text": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. Parturient montes nascetur ridiculus mus mauris vitae. Mus mauris vitae ultricies leo. Diam quam nulla porttitor massa id neque aliquam vestibulum."
+        ],
+        "image": {
+          "src": "/images/chickens.png",
+          "alt": "Organic Fed Chickens"
+        },
+        "button": {
+          "link": "#",
+          "text": "Learn More"
+        }
+      }
     }
   ]
 
