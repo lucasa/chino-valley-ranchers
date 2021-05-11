@@ -7,6 +7,7 @@ import { Paragraph } from './paragraph/Paragraph'
 export function ContentWithImage({data, index}) {
 
     //const {content} = props
+    //console.log(data)
 
     return(
 
@@ -30,7 +31,9 @@ export function ContentWithImage({data, index}) {
                                 }
                             ]}
                             >
-                            <InlineText name="text" />
+                            <Button button={data.content.button}>
+                                <InlineText name="text" />
+                            </Button>
                         </InlineGroup>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
@@ -56,7 +59,7 @@ export function ContentWithImage({data, index}) {
 export const contentWithImageBlock = {
     Component: ({ index, data }) => (
       <BlocksControls index={index}>
-        <ContentWithImage {...data} />
+        <ContentWithImage data={data} />
       </BlocksControls>
     ),
     template: {
