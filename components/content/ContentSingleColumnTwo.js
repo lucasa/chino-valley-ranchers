@@ -8,7 +8,7 @@ import { ImageAlt } from '../../components/image/ImageAlt'
 import { ButtonAlt } from '../../components/button/ButtonAlt'
 
 export function ContentSingleColumnTwo({data, index}) {
-
+    console.log(data)
     //const {content} = props
     const itemProps = {
         backgroundImage: '/images/bg-paper.png'
@@ -101,7 +101,18 @@ const button_alt_template = {
             text: "Find A Store Near You"
         }
     },
-    fields: [],
+    fields: [
+        {
+            name: 'link',
+            label: 'Button Link',
+            component: 'text',
+        },
+        {
+            name: 'text',
+            label: 'Button Text',
+            component: 'text',
+        }
+    ],
 }
 
 const CONTENT_SINGLE_COLUMN_TWO_BLOCKS = {
