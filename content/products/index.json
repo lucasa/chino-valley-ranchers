@@ -68,6 +68,49 @@
           "text": "View Pricing"
         }
       }
+    },
+    {
+      "_template": "contentSingleColumn",
+      "content": [
+        {
+          "heading": "Some Heading",
+          "subheading": "Some subheading"
+        },
+        {
+          "heading": "Some Heading",
+          "subheading": "Some subheading"
+        },
+        {
+          "heading": "Some Heading",
+          "subheading": "Some subheading"
+        }
+      ],
+      "blocks": [
+        {
+          "_template": "content",
+          "text": [
+            "Some default paragraph text here"
+          ],
+          "heading": "Better For Our Hens",
+          "subheading": "Our pasture raised hens enjoy the outdoors and all the benefits that come with the freedom to roam wild and free."
+        },
+        {
+          "_template": "content",
+          "text": [
+            "Some default paragraph text here"
+          ],
+          "heading": "Better For Our Eggs",
+          "subheading": "Natural pastures, plants and bugs - what else could be better for a hen? That's why pasture raised eggs are more flavorful and nutricious!"
+        },
+        {
+          "_template": "content",
+          "text": [
+            "Some default paragraph text here"
+          ],
+          "heading": "Better For You",
+          "subheading": "Happier hens make higher quality eggs to support a healthier you. It's that simple."
+        }
+      ]
     }
   ]
 }
