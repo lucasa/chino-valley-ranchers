@@ -86,7 +86,7 @@ const subheading_alt_template = {
 }
 
 const image_alt_template = {
-    label: 'Heading',
+    label: 'Image',
     defaultItem: {
         image: "/images/american-humane-certified.png"
     },
