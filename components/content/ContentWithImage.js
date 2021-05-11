@@ -28,6 +28,12 @@ export function ContentWithImage({data, index}) {
                                     label: 'Button Link',
                                     description: 'Set a destination for the button',
                                     component: 'text',
+                                },
+                                {
+                                    name: 'text',
+                                    label: 'Button Text',
+                                    description: 'The buttons text',
+                                    component: 'text'
                                 }
                             ]}
                             >
