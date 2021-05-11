@@ -78,9 +78,9 @@ const heading_alt_template = {
 }
 
 const subheading_alt_template = {
-    label: 'Sub Heading',
+    label: 'Paragraph',
     defaultItem: {
-        subheading: "Some Sub Heading or paragraph"
+        subheading: "Some paragraph Text Here."
     },
     fields: [],
 }
