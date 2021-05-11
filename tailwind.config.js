@@ -11,7 +11,9 @@ module.exports = {
       },
       colors: {
         'chinored': '#b01116',
-        'chinoyellow': '#f9a115'
+        'chinoyellow': '#f9a115',
+        'chinodarkblue': '#303c4b',
+        'chinoorange': '#f9a115'
       }
     },
   },
