@@ -3,7 +3,7 @@ import { InlineText, InlineTextarea, InlineImage, BlocksControls, InlineGroup } 
 export function ButtonAlt(props) {
 
     return (
-        <div key={index} className="relative -top-48 pb-4 lg:pb-12 bg-repeat-y bg-cover" style={{ backgroundImage: `url('/images/bg-paper.png')` }}>
+        <div className="relative -top-48 pb-4 lg:pb-12 bg-repeat-y bg-cover" style={{ backgroundImage: `url('/images/bg-paper.png')` }}>
             <div className="max-w-5xl mx-auto text-center">
                 <div className="mb-2 px-8 xl:px-0">
                     <BlocksControls index={props.index}>
