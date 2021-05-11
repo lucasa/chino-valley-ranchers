@@ -26,7 +26,7 @@ export function ContentWithImage({data, index}) {
                             <InlineImage
                                 name="content.image.src"
                                 parse={media => media.id}
-                                uploadDir={() => 'images/'}
+                                uploadDir={() => '/images/'}
                                 alt="content.image.alt"
                             />
 

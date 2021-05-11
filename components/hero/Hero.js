@@ -12,10 +12,8 @@ export function Hero(props) {
             <div className="absolute w-full min-h-[300px] lg:min-h-[516px]">
                 <InlineImage
                     name="image"
-                    parse={(media) => {
-                        return `/${media.id}`;
-                    }}
-                    uploadDir={() => "images/"}
+                    parse={media => media.id}
+                    uploadDir={() => "/images/"}
                     alt="Organic Eggs"
                 />
                 {/*<Image
