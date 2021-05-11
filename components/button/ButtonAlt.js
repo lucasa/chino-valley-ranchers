@@ -10,7 +10,7 @@ export function ButtonAlt(props) {
                 <div className="mb-2 px-8 xl:px-0">
                     <BlocksControls index={props.index}>
                         <div className="text-center py-8 lg:py-16">
-                            <a href="#" className="px-5 py-2 bg-chinored text-white uppercase font-din font-bold text-xl lg:text-4xl rounded-lg tracking-wide">Find Store</a>
+                            <a href={props.data.blocks[props.index].button.link} className="px-5 py-2 bg-chinored text-white uppercase font-din font-bold text-xl lg:text-4xl rounded-lg tracking-wide">{props.data.blocks[props.index].button.text}</a>
                         </div>
                     </BlocksControls>
                 </div>
