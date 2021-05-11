@@ -14,9 +14,7 @@ import { contentBlock } from '../../components/heading/HeadingPaperEdge'
 import { productsBlock } from '../../components/products/ProductsList'
 import { contentWithImageBlock } from '../../components/content/ContentWithImage'
 import { contentSingleColumnBlock } from '../../components/content/ContentSingleColumn'
-import { ContentWithImage } from '../../components/content/ContentWithImage'
-import { ContentSingleColumn } from '../../components/content/ContentSingleColumn'
-import { ContentSingleColumnTwo } from '../../components/content/ContentSingleColumnTwo'
+import { contentSingleColumnTwoBlock } from '../../components/content/ContentSingleColumnTwo'
 
 import { ProductsWrapper } from '../../context/products'
 
@@ -102,7 +100,8 @@ const PAGE_BLOCKS = {
   content: contentBlock,
   products: productsBlock,
   contentWithImage: contentWithImageBlock,
-  contentSingleColumn: contentSingleColumnBlock
+  contentSingleColumn: contentSingleColumnBlock,
+  contentSingleColumnTwo: contentSingleColumnTwoBlock
 }
 
 export const getStaticProps = async function({

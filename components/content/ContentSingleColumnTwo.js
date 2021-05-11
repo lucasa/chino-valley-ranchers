@@ -1,49 +1,123 @@
 import Image from 'next/image'
 
 import { Button } from '../../components/button/Button'
+import { HeadingAlt } from '../../components/heading/HeadingAlt'
+import { SubheadingAlt } from '../../components/heading/SubheadingAlt'
+import { ImageAlt } from '../../components/image/ImageAlt'
+import { ButtonAlt } from '../../components/button/ButtonAlt'
 
-export function ContentSingleColumnTwo(props) {
+export function ContentSingleColumnTwo({data, index}) {
 
-    const {content} = props
+    //const {content} = props
+    const itemProps = {
+        backgroundImage: '/images/bg-paper.png'
+    }
 
     return(
         <div>
-            <div className="relative pt-8 -top-48 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${content.background})` }}>
+            <div className="relative pt-8 -top-48 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('bg-paper-edge.png')` }}>
             </div>
-
-                    {content.content.map((block, index) => (
-                        <div key={index} className="relative -top-48 pb-4 lg:pb-12 bg-repeat-y bg-cover" style={{ backgroundImage: `url(${content.background_bottom})` }}>
-                        <div className="max-w-5xl mx-auto text-center">
-                        <div className="mb-2 px-8 xl:px-0">
-                            {block.image && (
-                                <div className="px-8 text-center">
-                                    <Image
-                                        src={block.image.src}
-                                        height={320}
-                                        width={814}
-                                        alt={block.image.alt}
-                                    />
-                                </div>
-                            )}
-                            {block.heading && (
-                                <h4 className="font-ultra uppercase text-gray-900 text-xl lg:text-4xl tracking-wide">{block.heading}</h4>
-                            )}
-                            {block.subheading && (
-                                <p className="text-xl lg:text-3xl text-gray-900 tracking-wide">{block.subheading}</p>
-                            )}
-
-                            {block.button && (
-                                <div className="text-center py-8 lg:py-16">
-                                    <Button button={block.button} />
-                                </div>
-                            )}
-
-                        </div>
-                        </div>
-                        </div>
-                    ))}
+            <InlineBlocks name="blocks" blocks={CONTENT_SINGLE_COLUMN_TWO_BLOCKS} itemProps={itemProps} />
         </div>
 
     )
 
+}
+
+export const contentSingleColumnTwoBlock = {
+    Component: ({ index, data }) => (
+      <BlocksControls index={index}>
+        <ContentSingleColumn data={data} />
+      </BlocksControls>
+    ),
+    template: {
+        label: 'Content Single Column v2',
+        defaultItem: {
+            content: [
+                {
+                    image: {
+                      src: "/images/american-humane-certified.png",
+                      alt: "American Humane Certified Eggs"
+                    }
+                },
+                {
+                    subheading: "Our passion for quality egg production practices dates back to our early beginnings. Along the way, we’ve received various certifications to assure our customers of our commitment to the highest standards. Chino Valley Ranchers pasture raised eggs are certified by American Humane and carry the American Humane Certified seal."
+                },
+                {
+                    subheading: "Our passion for quality egg production permeates all operations and every employee is personally responsible for doing their part. Company employees and all personnel follow American Humane’s strict requirements for documentation, inspections, equipment maintenance, and access to feed and water. Maintaining pasture raised quality demands extra attention, but we believe it’s worth it."
+                },
+                {
+                    heading: "Proudly Pasture Raised For You"
+                },
+                {
+                    subheading: "From our family to yours, Chino Valley Ranchers pasture raised eggs are produced with your health and well-being in mind."
+                },
+                {
+                    button: {
+                      link: {
+                        url: "#"
+                      },
+                      text: "Find a Store Near You"
+                    }
+                }
+            ]
+        },
+        fields: [
+
+        ],
+    },
+}
+
+const heading_alt_template = {
+    label: 'Heading',
+    defaultItem: {
+        heading: "Some Heading"
+    },
+    fields: [],
+}
+
+const subheading_alt_template = {
+    label: 'Sub Heading',
+    defaultItem: {
+        subheading: "Some Sub Heading or paragraph"
+    },
+    fields: [],
+}
+
+const image_alt_template = {
+    label: 'Heading',
+    defaultItem: {
+        image: "/images/american-humane-certified.png"
+    },
+    fields: [],
+}
+
+const button_alt_template = {
+    label: 'Button',
+    defaultItem: {
+        button: {
+            link: "#",
+            text: "Find A Store Near You"
+        }
+    },
+    fields: [],
+}
+
+const CONTENT_SINGLE_COLUMN_TWO_BLOCKS = {
+    headingAlt: {
+        Component: HeadingAlt,
+        template: heading_alt_template,
+    },
+    subheadingAlt: {
+        Component: SubheadingAlt,
+        template: subheading_alt_template,
+    },
+    imageAlt: {
+        Component: ImageAlt,
+        template: image_alt_template,
+    },
+    buttonAlt: {
+        Component: ButtonAlt,
+        template: button_alt_template,
+    }
 }
