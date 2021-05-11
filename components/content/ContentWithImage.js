@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { InlineText, InlineTextarea, InlineBlocks, InlineImage, BlocksControls } from 'react-tinacms-inline'
+import { InlineText, InlineTextarea, InlineBlocks, InlineImage, BlocksControls, InlineGroup } from 'react-tinacms-inline'
 
 import { Button } from '../button/Button'
 import { Paragraph } from './paragraph/Paragraph'
@@ -14,12 +14,24 @@ export function ContentWithImage({data, index}) {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 pt-12 lg:pt-36 pb-12 lg:pb-24">
 
-                    <div className="col-span-12 lg:col-span-8 text-center lg:text-left px-8 xl:px-0">
+                    <div className="col-span-12 lg:col-span-8 text-center lg:text-left px-8 xl:px-0 xl:pr-8">
                         <h3 className="text-3xl lg:text-7xl text-chinored font-ultra uppercase tracking-wide lg:mb-4"><InlineTextarea name="content.heading" /></h3>
                         <div className="pb-16">
                             <InlineBlocks name="blocks" blocks={CONTENT_WITH_IMAGE_BLOCKS} />
                         </div>
-
+                        <InlineGroup
+                            name="content.button"
+                            fields={[
+                                {
+                                    name: 'link',
+                                    label: 'Button Link',
+                                    description: 'Set a destination for the button',
+                                    component: 'text',
+                                }
+                            ]}
+                            >
+                            <InlineText name="text" />
+                        </InlineGroup>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
                         <div className="overflow-hidden w-full h-full relative">
