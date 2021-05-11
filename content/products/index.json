@@ -71,20 +71,6 @@
     },
     {
       "_template": "contentSingleColumn",
-      "content": [
-        {
-          "heading": "Some Heading",
-          "subheading": "Some subheading"
-        },
-        {
-          "heading": "Some Heading",
-          "subheading": "Some subheading"
-        },
-        {
-          "heading": "Some Heading",
-          "subheading": "Some subheading"
-        }
-      ],
       "blocks": [
         {
           "_template": "content",
@@ -114,34 +100,6 @@
     },
     {
       "_template": "contentSingleColumnTwo",
-      "content": [
-        {
-          "image": {
-            "src": "/images/american-humane-certified.png",
-            "alt": "American Humane Certified Eggs"
-          }
-        },
-        {
-          "subheading": "Our passion for quality egg production practices dates back to our early beginnings. Along the way, we’ve received various certifications to assure our customers of our commitment to the highest standards. Chino Valley Ranchers pasture raised eggs are certified by American Humane and carry the American Humane Certified seal."
-        },
-        {
-          "subheading": "Our passion for quality egg production permeates all operations and every employee is personally responsible for doing their part. Company employees and all personnel follow American Humane’s strict requirements for documentation, inspections, equipment maintenance, and access to feed and water. Maintaining pasture raised quality demands extra attention, but we believe it’s worth it."
-        },
-        {
-          "heading": "Proudly Pasture Raised For You"
-        },
-        {
-          "subheading": "From our family to yours, Chino Valley Ranchers pasture raised eggs are produced with your health and well-being in mind."
-        },
-        {
-          "button": {
-            "link": {
-              "url": "#"
-            },
-            "text": "Find a Store Near You"
-          }
-        }
-      ],
       "blocks": [
         {
           "_template": "imageAlt",
