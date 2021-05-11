@@ -8,10 +8,10 @@ import { ImageAlt } from '../../components/image/ImageAlt'
 import { ButtonAlt } from '../../components/button/ButtonAlt'
 
 export function ContentSingleColumnTwo({data, index}) {
-    console.log(data)
     //const {content} = props
     const itemProps = {
-        backgroundImage: '/images/bg-paper.png'
+        backgroundImage: '/images/bg-paper.png',
+        data: data
     }
 
     return(
