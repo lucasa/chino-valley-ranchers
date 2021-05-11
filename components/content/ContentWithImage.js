@@ -15,7 +15,7 @@ export function ContentWithImage({data, index}) {
                 <div className="grid grid-cols-12 pt-12 lg:pt-36 pb-12 lg:pb-24">
 
                     <div className="col-span-12 lg:col-span-8 text-center lg:text-left px-8 xl:px-0">
-                        <h3 className="text-3xl lg:text-7xl text-chinored font-ultra uppercase tracking-wide lg:mb-4"><InlineTextArea name="content.heading" /></h3>
+                        <h3 className="text-3xl lg:text-7xl text-chinored font-ultra uppercase tracking-wide lg:mb-4"><InlineTextarea name="content.heading" /></h3>
                         <div className="pb-16">
                             <InlineBlocks name="blocks" blocks={CONTENT_WITH_IMAGE_BLOCKS} />
                         </div>
