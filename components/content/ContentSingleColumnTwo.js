@@ -28,7 +28,7 @@ export function ContentSingleColumnTwo({data, index}) {
 export const contentSingleColumnTwoBlock = {
     Component: ({ index, data }) => (
       <BlocksControls index={index}>
-        <ContentSingleColumn data={data} />
+        <ContentSingleColumnTwo data={data} />
       </BlocksControls>
     ),
     template: {
