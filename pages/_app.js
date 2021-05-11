@@ -7,9 +7,9 @@ import '../styles/globals.css'
 import { TinaCMS, TinaProvider } from 'tinacms'
 import {
   GithubClient,
-  TinacmsGithubProvider,
-  GithubMediaStore,
+  TinacmsGithubProvider
 } from 'react-tinacms-github'
+import { NextGithubMediaStore } from 'next-tinacms-github'
 
 import { EditLink } from '../components/tinacms/EditLink'
 
@@ -23,6 +23,8 @@ function MyApp({ Component, pageProps }) {
     baseBranch: process.env.BASE_BRANCH, // e.g. 'master' or 'main' on newer repos
   })
 
+  const mediaStore = new NextGithubMediaStore(github)
+
   const cms = new TinaCMS({
     enabled: !!pageProps.preview,
     apis: {
@@ -34,7 +36,7 @@ function MyApp({ Component, pageProps }) {
     /**
      * 3. Register the Media Store
      */
-    media: new GithubMediaStore(github),
+    media: mediaStore,
     /**
      * 4. Use the Sidebar and Toolbar
      */
