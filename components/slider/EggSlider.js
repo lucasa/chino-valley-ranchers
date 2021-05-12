@@ -15,7 +15,7 @@ export function EggSlider(props) {
 
     return(
         <>
-        <div className="relative w-full hidden lg:block h-[95px] -mt-[75px] z-40 bg-cover bg-no-repeat" style={{ backgroundImage: `url('/images/bg-paper-edge-border.png')` }}></div>
+        <div className={`relative w-full hidden lg:block h-[95px] -mt-[75px] z-40 bg-cover bg-no-repeat ${props.classes}`} style={{ backgroundImage: `url('/images/bg-paper-edge-border.png')` }}></div>
         <div className="relative w-full z-40">
             <div className="max-w-xl mx-auto min-h-[200px]">
                 <div className="grid grid-cols-12">
