@@ -9,7 +9,7 @@ export function ContentSingleColumn({data, index}) {
 
     return(
 
-        <div className="relative pt-8 -top-36 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/blue-bg.png')` }}>
+        <div className="relative pt-8 -mt-12 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/blue-bg.png')` }}>
             <div className="max-w-5xl mx-auto pt-8 lg:pt-32 text-center">
                 <InlineBlocks name="blocks" blocks={CONTENT_SINGLE_COLUMN_BLOCKS} />
             </div>

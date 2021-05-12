@@ -11,7 +11,7 @@ export function ContentWithImage({data, index}) {
 
     return(
 
-        <div className="relative pt-8 -top-24 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/dirt-background.png')` }}>
+        <div className="relative pt-8 -mt-24 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/dirt-background.png')` }}>
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 pt-12 lg:pt-36 pb-12 lg:pb-24">
 

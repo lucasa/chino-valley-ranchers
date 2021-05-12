@@ -9,6 +9,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 import { Nav } from '../../components/Nav'
+import { Footer } from '../../components/footer/Footer'
 import { heroBlock } from '../../components/hero/Hero'
 import { contentBlock } from '../../components/heading/HeadingPaperEdge'
 import { productsBlock } from '../../components/products/ProductsList'
@@ -68,7 +69,7 @@ export default function Products({ file, isPreview, products }) {
   useGithubToolbarPlugins()
 
   return (
-
+    <>
     <div className={`relative`}>
       <Head>
         <title>Chino Valley Ranchers | Products</title>
@@ -91,7 +92,8 @@ export default function Products({ file, isPreview, products }) {
         </InlineForm>
       </ProductsWrapper>
     </div>
-
+    <Footer />
+    </>
   )
 }
 

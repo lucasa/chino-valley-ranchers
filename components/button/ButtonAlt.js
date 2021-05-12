@@ -5,7 +5,7 @@ export function ButtonAlt(props) {
     console.log(props)
 
     return (
-        <div className="relative -top-48 pb-4 lg:pb-12 bg-repeat-y bg-cover" style={{ backgroundImage: `url('/images/bg-paper.png')` }}>
+        <div className="relative pb-4 lg:pb-12 bg-repeat-y bg-cover" style={{ backgroundImage: `url('/images/bg-paper.png')` }}>
             <div className="max-w-5xl mx-auto text-center">
                 <div className="mb-2 px-8 xl:px-0">
                     <BlocksControls index={props.index}>

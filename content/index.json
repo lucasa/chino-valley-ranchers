@@ -1,0 +1,12 @@
+{
+    "blocks": [
+      {
+        "_template": "heroVideo",
+        "heading": "Pasture Raised Products",
+        "image": "/images/hero-products.jpg"
+      },
+      {
+          "_template": "eggSlider"
+      }
+    ]
+}

@@ -1,10 +1,7 @@
 import Image from 'next/image'
 import { InlineTextarea, InlineImage, BlocksControls } from 'react-tinacms-inline'
 
-export function Hero(props) {
-
-    //const {image, heading} = props
-    //const {image} = props
+export function HeroVideo(props) {
 
     return(
 
@@ -12,6 +9,7 @@ export function Hero(props) {
             <div className="absolute w-full min-h-[300px] lg:min-h-[516px]">
                 <InlineImage
                     name="image"
+                    className="min-h-full"
                     parse={media => media.id}
                     uploadDir={() => "/images/"}
                     alt="Organic Eggs"
@@ -32,7 +30,6 @@ export function Hero(props) {
                         </div>
                     )}
                 </InlineImage>
-
             </div>
 
             <div className="max-w-5xl mx-auto z-40 text-center">
@@ -44,10 +41,10 @@ export function Hero(props) {
 
 }
 
-export const heroBlock = {
+export const heroVideoBlock = {
     Component: ({ index }) => (
       <BlocksControls index={index}>
-        <Hero />
+        <HeroVideo />
       </BlocksControls>
     ),
     template: {
@@ -56,8 +53,6 @@ export const heroBlock = {
             heading: 'Some Headline Here',
             image: '/images/hero-products.jpg'
         },
-        fields: [
-
-        ],
+        fields: [],
     },
 }

@@ -16,7 +16,7 @@ export function ContentSingleColumnTwo({data, index}) {
 
     return(
         <>
-            <div className="relative pt-8 -top-48 pb-12 bg-no-repeat bg-cover min-h-[56px]" style={{ backgroundImage: `url('/images/bg-paper-edge.png')` }}>
+            <div className="relative -mt-12 pt-8 lg:pt-20 pb-12 bg-no-repeat bg-cover min-h-[56px]" style={{ backgroundImage: `url('/images/bg-paper-edge.png')` }}>
             </div>
             <InlineBlocks name="blocks" blocks={CONTENT_SINGLE_COLUMN_TWO_BLOCKS} itemProps={itemProps} />
         </>
