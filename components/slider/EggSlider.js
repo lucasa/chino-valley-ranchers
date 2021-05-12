@@ -4,6 +4,8 @@ import 'react-multi-carousel/lib/styles.css';
 
 export function EggSlider(props) {
 
+    console.log(props)
+
     const responsive = {
         mobile: {
           breakpoint: { max: 4000, min: 0 },
@@ -34,9 +36,9 @@ export function EggSlider(props) {
 }
 
 export const eggSliderBlock = {
-    Component: ({ index }) => (
+    Component: ({ index, data }) => (
       <BlocksControls index={index}>
-        <EggSlider />
+        <EggSlider {...data} />
       </BlocksControls>
     ),
     template: {
@@ -45,7 +47,10 @@ export const eggSliderBlock = {
 
         },
         fields: [
-
+            {
+                name: 'classes',
+                component: 'text'
+            }
         ],
     },
 }

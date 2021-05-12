@@ -54,10 +54,7 @@ export const heroVideoBlock = {
             image: '/images/hero-products.jpg'
         },
         fields: [
-            {
-                name: 'classes',
-                component: 'text'
-            }
+
         ],
     },
 }
