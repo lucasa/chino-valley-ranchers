@@ -49,6 +49,7 @@ export const eggSliderBlock = {
         fields: [
             {
                 name: 'classes',
+                label: 'Tailwind CSS Classes',
                 component: 'text'
             }
         ],
