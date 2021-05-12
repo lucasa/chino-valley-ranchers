@@ -51,6 +51,47 @@ export const eggSliderBlock = {
                 name: 'classes',
                 label: 'Tailwind CSS Classes',
                 component: 'text'
+            },
+            {
+                label: 'Slides',
+                name: 'slides',
+                component: 'group-list',
+                itemProps: item => ({
+                    key: item.id,
+                    label: item.name
+                }),
+                defaultItem: () => ({
+                    name: 'New Slide',
+                }),
+                fields: [
+                    {
+                      label: 'Name',
+                      name: 'name',
+                      component: 'text',
+                    },
+                    {
+                      label: 'Heading',
+                      name: 'heading',
+                      component: 'text',
+                    },
+                    {
+                      label: 'Sub Heading',
+                      name: 'subheading',
+                      component: 'text',
+                    },
+                    {
+                        label: 'Content',
+                        name: 'content',
+                        component: 'textarea',
+                    },
+                    {
+                        label: 'Image',
+                        name: 'image',
+                        component: 'image',
+                        parse: media => `/static/${media.filename}`,
+                        uploadDir: () => '/images/'
+                    },
+                ],
             }
         ],
     },
