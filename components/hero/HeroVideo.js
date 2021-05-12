@@ -42,9 +42,9 @@ export function HeroVideo(props) {
 }
 
 export const heroVideoBlock = {
-    Component: ({ index }) => (
+    Component: ({ index, data }) => (
       <BlocksControls index={index}>
-        <HeroVideo />
+        <HeroVideo {...data} />
       </BlocksControls>
     ),
     template: {
@@ -53,6 +53,11 @@ export const heroVideoBlock = {
             heading: 'Some Headline Here',
             image: '/images/hero-products.jpg'
         },
-        fields: [],
+        fields: [
+            {
+                name: 'classes',
+                component: 'text'
+            }
+        ],
     },
 }
