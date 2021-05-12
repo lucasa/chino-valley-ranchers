@@ -64,7 +64,7 @@ export const getStaticProps = async function({
   if (preview) {
     return getGithubPreviewProps({
     ...previewData,
-    fileRelativePath: 'content/products/index.json',
+    fileRelativePath: 'content/index.json',
     parse: parseJson,
     isPreview: true,
     })
@@ -76,7 +76,7 @@ export const getStaticProps = async function({
       error: null,
       preview: false,
       file: {
-        fileRelativePath: 'content/products/index.json',
+        fileRelativePath: 'content/index.json',
         data: (await import('../content/index.json')).default,
       }
     },
