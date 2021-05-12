@@ -86,9 +86,21 @@ export const eggSliderBlock = {
                     {
                         label: 'Image',
                         name: 'image',
-                        component: 'image',
-                        parse: media => `/static/${media.filename}`,
-                        uploadDir: () => '/images/'
+                        component: 'group',
+                        fields: [
+                            {
+                                label: 'Image',
+                                name: 'src',
+                                component: 'image',
+                                parse: media => `/images/products/${media.filename}`,
+                                uploadDir: () => '/images/products/'
+                            },
+                            {
+                                label: 'Image Alt Tag',
+                                name: 'alt',
+                                component: 'text',
+                            }
+                        ]
                     },
                 ],
             }
