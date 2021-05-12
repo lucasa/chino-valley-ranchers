@@ -22,7 +22,7 @@ export function EggSlider(props) {
                     <div className="col-span-12">
                         <Carousel responsive={responsive} additionalTransfrom={0} arrows={false} autoPlay infinite renderDotsOutside showDots slidesToSlide={1} swipeable>
                             {props.slides.map( (slide, index) => (
-                                <div className="w-full text-center">{slide.name}</div>
+                                <div key={index} className="w-full text-center">{slide.name}</div>
                             ))}
                         </Carousel>
                     </div>
