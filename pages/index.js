@@ -14,9 +14,9 @@ export default function Products({ file, isPreview }) {
   const cms = useCMS()
 
   const formConfig = {
-    id: '../../content/products/index.json',
+    id: '../content/index.json',
     initialValues: file,
-    label: 'Products Page',
+    label: 'Home Page',
     fields: [
 
     ],

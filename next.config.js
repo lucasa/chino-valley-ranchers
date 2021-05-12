@@ -8,5 +8,8 @@ module.exports = {
   },
   redirects: {
 
-  }
+  },
+  images: {
+    domains: ['raw.githubusercontent.com'],
+  },
 }

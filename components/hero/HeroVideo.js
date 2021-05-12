@@ -22,10 +22,10 @@ export function HeroVideo(props) {
                             }}
                         >
                             <Image
-                            src={props.src}
-                            alt={props.alt}
-                            layout="fill"
-                            objectFit="contain"
+                                src={props.src}
+                                alt={props.alt}
+                                layout="fill"
+                                objectFit="contain"
                             />
                         </div>
                     )}
