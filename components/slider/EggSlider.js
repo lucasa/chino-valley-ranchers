@@ -142,30 +142,30 @@ export const eggSliderBlock = {
                                 label: 'Image Alt Tag',
                                 name: 'alt',
                                 component: 'text',
-                            },
-                            {
-                                label: 'Icons',
-                                name: 'icons',
-                                component: 'group-list',
-                                itemProps: item => ({
-                                    key: item.id,
-                                    label: item.name
-                                }),
-                                defaultItem: () => ({
-                                    name: 'New Icon',
-                                }),
-                                fields: [
-                                    {
-                                        label: 'Icon',
-                                        name: 'src',
-                                        component: 'image',
-                                        parse: media => `/images/${media.filename}`,
-                                        uploadDir: () => '/images/'
-                                    }
-                                ]
                             }
                         ]
                     },
+                    {
+                        label: 'Icons',
+                        name: 'icons',
+                        component: 'group-list',
+                        itemProps: item => ({
+                            key: item.id,
+                            label: item.name
+                        }),
+                        defaultItem: () => ({
+                            name: 'New Icon',
+                        }),
+                        fields: [
+                            {
+                                label: 'Icon',
+                                name: 'src',
+                                component: 'image',
+                                parse: media => `/images/${media.filename}`,
+                                uploadDir: () => '/images/'
+                            }
+                        ]
+                    }
                 ],
             }
         ],

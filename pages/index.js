@@ -53,7 +53,8 @@ export default function Products({ file, isPreview }) {
 
 const PAGE_BLOCKS = {
   heroVideo: heroVideoBlock,
-  eggSlider: eggSliderBlock
+  eggSlider: eggSliderBlock,
+  //inspectionSlider: inspectionSliderBlock
 }
 
 export const getStaticProps = async function({
