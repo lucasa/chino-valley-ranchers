@@ -8,6 +8,8 @@ import { Nav } from '../components/Nav'
 import { Footer } from '../components/footer/Footer'
 import { heroVideoBlock } from '../components/hero/HeroVideo'
 import { eggSliderBlock } from '../components/slider/EggSlider'
+import { inspectionSliderBlock } from '../components/slider/InspectionSlider'
+import { feedVideoBlock } from '../components/video/FeedVideo'
 
 export default function Products({ file, isPreview }) {
 
@@ -54,7 +56,8 @@ export default function Products({ file, isPreview }) {
 const PAGE_BLOCKS = {
   heroVideo: heroVideoBlock,
   eggSlider: eggSliderBlock,
-  //inspectionSlider: inspectionSliderBlock
+  inspectionSlider: inspectionSliderBlock,
+  feedVideo: feedVideoBlock
 }
 
 export const getStaticProps = async function({

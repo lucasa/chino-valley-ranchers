@@ -17,7 +17,21 @@
           "image": {
             "alt": "Organic Eggs",
             "src": "/images/products/organic.png"
-          }
+          },
+          "icons": [
+            {
+              "image": {
+                "src": "/images/icon-certified.png",
+                "alt": "Certified Icon"
+              }
+            },
+            {
+              "image": {
+                "src": "/images/icon-certified.png",
+                "alt": "Certified Icon"
+              }
+            }
+          ]
         },
         {
           "name": "Organic Omega-3",
@@ -27,7 +41,21 @@
           "image": {
             "src": "/images/products/organic-omega-3.png",
             "alt": "Organic Omega-3"
-          }
+          },
+          "icons": [
+            {
+              "image": {
+                "src": "/images/icon-certified.png",
+                "alt": "Certified Icon"
+              }
+            },
+            {
+              "image": {
+                "src": "/images/icon-certified.png",
+                "alt": "Certified Icon"
+              }
+            }
+          ]
         },
         {
           "name": "Pasture Raised",
@@ -37,9 +65,56 @@
           "image": {
             "src": "/images/products/pasture-raised.png",
             "alt": "Pasture Raised Eggs"
+          },
+          "icons": [
+            {
+              "image": {
+                "src": "/images/icon-certified.png",
+                "alt": "Certified Icon"
+              }
+            },
+            {
+              "image": {
+                "src": "/images/icon-certified.png",
+                "alt": "Certified Icon"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_template": "inspectionSlider",
+      "slides": [
+        {
+          "content": "we inspect each egg so we know it’s fit to wear our name.",
+          "image": {
+            "alt": "Organic Eggs",
+            "src": "/images/egg.png"
+          }
+        },
+        {
+          "content": "we inspect each egg so we know it’s fit to wear our name.",
+          "image": {
+            "alt": "Organic Eggs",
+            "src": "/images/egg.png"
           }
         }
       ]
+    },
+    {
+      "_template": "feedVideo",
+      "classes": "",
+      "heading": "It all starts with our feed",
+      "video": {
+        "src": "https://www.youtube.com/embed/VaYSIOteCcw?controls=0",
+        "props": ""
+      },
+      "content": "To ensure purity and quality, we mill our own feed onsite at Southern California’s only dedicated organic poultry feed mill.",
+      "image": {
+        "src": "/images/see-for-yourself.png",
+        "alt": "Feed Video"
+      }
     }
   ]
 }

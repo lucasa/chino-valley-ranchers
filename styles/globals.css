@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+.egg-slider-bg {
+    background-position: center top 0 48px;
+}
+
 .egg-slider-background {
     background-position: center top 1rem;
 }
