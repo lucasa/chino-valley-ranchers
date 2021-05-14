@@ -13,7 +13,7 @@ export function ContentWithImageAlt(props) {
                 <div className="grid grid-cols-12 pt-12 lg:pt-36 pb-12 lg:pb-24">
 
                     <div className="col-span-12 lg:col-span-8 text-center lg:text-left px-8 xl:px-0 xl:pr-8">
-                        <h3 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide lg:mb-4"><InlineTextarea name="heading" /></h3>
+                        <h3 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide lg:mb-4"><InlineTextarea name="content.heading" /></h3>
                         <div className="pb-16">
                             <InlineBlocks name="blocks" blocks={CONTENT_WITH_IMAGE_BLOCKS} />
                         </div>
@@ -53,24 +53,70 @@ export const contentWithImageAltBlock = {
         },
         fields: [
             {
-                heading: "Pasture Raised Liquid Whole Egg",
-                text: [
-                    "Our 100% Liquid Organic Egg Whites come from hens that live on free-range farms and fed only the finest organic (non-GMO) grains & seeds from certified pesticide-free fields.",
-                    "Egg whites are naturally fat free, cholesterol free, and contain no additives or artificial ingredients.",
-                    "Each 16 oz. pint is equivalent to about 10 eggs, while 32 oz. pint is equivalent to about 20 eggs – both are fully pasteurized."
-                ],
-                button: {
-                    link: "#",
-                    text: "Find a Store Near You"
-                },
-                image: {
-                    src: "/images/pasture-raised-liquid-egg-whites.png",
-                    alt: "Pasture Raised Liquid Egg Whites"
-                },
-                calloutImage: {
-                    src: "/images/new.png",
-                    alt: "New Product"
-                }
+                name: 'heading',
+                label: 'Heading',
+                component: 'textarea'
+            },
+            {
+                name: 'text',
+                label: 'Text',
+                component: 'list',
+                fields: [
+                    {
+                        component: 'textarea'
+                    }
+                ]
+            },
+            {
+                name: 'button',
+                label: 'Button',
+                component: 'group',
+                fields: [
+                    {
+                        name: 'link',
+                        label: "Link",
+                        component: 'text'
+                    },
+                    {
+                        name: 'text',
+                        label: 'Button Text',
+                        component: 'text'
+                    }
+                ]
+            },
+            {
+                name: 'image',
+                label: 'Image',
+                component: 'group',
+                fields: [
+                    {
+                        name: 'src',
+                        label: 'src',
+                        component: 'text'
+                    },
+                    {
+                        name: 'alt',
+                        label: 'Alt Text',
+                        component: 'text'
+                    }
+                ]
+            },
+            {
+                name: 'image',
+                label: 'Image',
+                component: 'group',
+                fields: [
+                    {
+                        name: 'src',
+                        label: 'src',
+                        component: 'text'
+                    },
+                    {
+                        name: 'alt',
+                        label: 'Alt Text',
+                        component: 'text'
+                    }
+                ]
             }
         ],
     },

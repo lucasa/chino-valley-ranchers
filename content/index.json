@@ -116,7 +116,8 @@
         "alt": "Feed Video"
       }
     },{
-      "_template": "contentWithImageAlt"
+      "_template": "contentWithImageAlt",
+
     }
   ]
 }
