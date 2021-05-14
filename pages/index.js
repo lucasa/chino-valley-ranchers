@@ -59,7 +59,7 @@ const PAGE_BLOCKS = {
   eggSlider: eggSliderBlock,
   inspectionSlider: inspectionSliderBlock,
   feedVideo: feedVideoBlock,
-  ContentWithImageAlt: contentWithImageAltBlock
+  contentWithImageAlt: contentWithImageAltBlock
 }
 
 export const getStaticProps = async function({

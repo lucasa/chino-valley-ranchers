@@ -8,12 +8,12 @@ export function ContentWithImageAlt(props) {
 
     return(
 
-        <div className="relative pt-8 -mt-24 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/dirt-background.png')` }}>
+        <div className="relative pt-8 -mt-24 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/yellow-egg-bg.png')` }}>
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 pt-12 lg:pt-36 pb-12 lg:pb-24">
 
                     <div className="col-span-12 lg:col-span-8 text-center lg:text-left px-8 xl:px-0 xl:pr-8">
-                        <h3 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide lg:mb-4"><InlineTextarea name="content.heading" /></h3>
+                        <h3 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide lg:mb-4"><InlineTextarea name="heading" /></h3>
                         <div className="pb-16">
                             <InlineBlocks name="blocks" blocks={CONTENT_WITH_IMAGE_BLOCKS} />
                         </div>
@@ -49,7 +49,6 @@ export const contentWithImageAltBlock = {
     template: {
         label: 'Content With Image',
         defaultItem: {
-
         },
         fields: [
             {
@@ -102,8 +101,8 @@ export const contentWithImageAltBlock = {
                 ]
             },
             {
-                name: 'image',
-                label: 'Image',
+                name: 'calloutImage',
+                label: 'Callout Image',
                 component: 'group',
                 fields: [
                     {
@@ -118,8 +117,8 @@ export const contentWithImageAltBlock = {
                     }
                 ]
             }
-        ],
-    },
+        ]
+    }
 }
 
 const paragraph_template = {
@@ -139,7 +138,7 @@ const paragraph_template = {
   }
 
 const CONTENT_WITH_IMAGE_BLOCKS = {
-    paragraph: {
+    text: {
       Component: Paragraph,
       template: paragraph_template,
     },
