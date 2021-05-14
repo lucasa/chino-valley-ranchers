@@ -21,7 +21,7 @@ export function FeedVideo(props) {
                     <div className="col-span-12">
                         <div className="border-8 border-white rounded">
                             <div className="aspect-w-16 aspect-h-9">
-                                <iframe src={props.video.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+                                <iframe src={props.video.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                         </div>
                     </div>
