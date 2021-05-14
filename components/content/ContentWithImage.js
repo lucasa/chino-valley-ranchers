@@ -6,9 +6,6 @@ import { Paragraph } from './paragraph/Paragraph'
 
 export function ContentWithImage({data, index}) {
 
-    //const {content} = props
-    //console.log(data)
-
     return(
 
         <div className="relative pt-8 -mt-24 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/dirt-background.png')` }}>

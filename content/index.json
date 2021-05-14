@@ -115,6 +115,8 @@
         "src": "/images/see-for-yourself.png",
         "alt": "Feed Video"
       }
+    },{
+      "_template": "contentWithImageAlt"
     }
   ]
 }
