@@ -145,6 +145,18 @@
           "text": "Each 16 oz. pint is equivalent to about 10 eggs, while 32 oz. pint is equivalent to about 20 eggs – both are fully pasteurized."
         }
       ]
+    },
+    {
+      "_template": "imageWithContent",
+      "content": "Pasture raised hens at Chino Valley Ranchers lay healthier, all natural eggs. Come see a little of their pastoral paradise for yourself.",
+      "leftImage": {
+        "src": "/images/chicken.png",
+        "alt": "Chicken"
+      },
+      "rightImage": {
+        "src": "/images/sign-post.png",
+        "alt": "Sign Post"
+      }
     }
   ]
 }

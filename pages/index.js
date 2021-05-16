@@ -11,6 +11,7 @@ import { eggSliderBlock } from '../components/slider/EggSlider'
 import { inspectionSliderBlock } from '../components/slider/InspectionSlider'
 import { feedVideoBlock } from '../components/video/FeedVideo'
 import { contentWithImageAltBlock } from '../components/content/ContentWithImageAlt'
+import { imageWithContentBlock } from '../components/content/ImageWithContent'
 
 export default function Products({ file, isPreview }) {
 
@@ -59,7 +60,8 @@ const PAGE_BLOCKS = {
   eggSlider: eggSliderBlock,
   inspectionSlider: inspectionSliderBlock,
   feedVideo: feedVideoBlock,
-  contentWithImageAlt: contentWithImageAltBlock
+  contentWithImageAlt: contentWithImageAltBlock,
+  imageWithContent: imageWithContentBlock
 }
 
 export const getStaticProps = async function({

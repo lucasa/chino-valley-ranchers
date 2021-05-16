@@ -8,7 +8,7 @@ export function ContentWithImageAlt(props) {
 
     return(
 
-        <div className="relative pt-8 -mt-24 pb-12 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/yellow-egg-bg.png')` }}>
+        <div className="relative pt-20 -mt-24 pb-36 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/yellow-egg-bg.png')` }}>
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 pt-12 lg:pt-36 pb-12 lg:pb-24">
 
@@ -20,7 +20,8 @@ export function ContentWithImageAlt(props) {
 
                         <Button button={props.data.button} />
                     </div>
-                    <div className="col-span-12 lg:col-span-4">
+                    <div className="col-span-12 lg:col-span-4 relative flex flex-col-reverse lg:block">
+                        {/* Image */}
                         <div className="overflow-hidden w-full h-full relative">
                             <InlineImage
                                 name="image.src"
@@ -28,8 +29,12 @@ export function ContentWithImageAlt(props) {
                                 uploadDir={() => '/images/'}
                                 alt="image.alt"
                             />
-
                         </div>
+                        {/* Callout Image */}
+                        <div className="relative lg:absolute lg:-top-24 lg:right-0 flex justify-center lg:block pt-12 lg:pt-0">
+                            <img src={props.data.calloutImage.src} alt={props.data.calloutImage.alt} />
+                        </div>
+
                     </div>
 
                 </div>
