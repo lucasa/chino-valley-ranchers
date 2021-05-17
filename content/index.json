@@ -144,7 +144,8 @@
           "_template": "text",
           "text": "Each 16 oz. pint is equivalent to about 10 eggs, while 32 oz. pint is equivalent to about 20 eggs – both are fully pasteurized."
         }
-      ]
+      ],
+      "text": []
     },
     {
       "_template": "imageWithContent",
@@ -156,7 +157,12 @@
       "rightImage": {
         "src": "/images/sign-post.png",
         "alt": "Sign Post"
-      }
+      },
+      "absoluteContent": [
+        "Better For You",
+        "Better For Me",
+        "Better For Them"
+      ]
     }
   ]
 }
