@@ -159,10 +159,23 @@
         "alt": "Sign Post"
       },
       "absoluteContent": [
-        "Better For You",
-        "Better For Me",
-        "Better For Them"
+        "Better For Our Hens",
+        "Better For Our Eggs",
+        "Better For You!"
       ]
+    },
+    {
+      "_template": "ourFamily",
+      "heading": "From Our Family To Yours",
+      "content": "From the early days more than half-century ago, Chino Valley Ranchers has been always been a family-owned company dedicated to bringing the freshest and best tasting eggs to your table. Consistent quality is our hallmark. In fact, for three generations now, our sole focus has been egg ranching (and nobody does it better).",
+      "image": {
+        "src": "/images/family.png",
+        "alt": "Our Family"
+      },
+      "button": {
+        "link": "#",
+        "text": "Learn More About Our Family"
+      }
     }
   ]
 }

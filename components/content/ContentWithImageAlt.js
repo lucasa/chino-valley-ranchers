@@ -10,10 +10,10 @@ export function ContentWithImageAlt(props) {
 
         <div className="relative pt-20 -mt-24 pb-36 bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/yellow-egg-bg.png')` }}>
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-12 pt-12 lg:pt-36 pb-12 lg:pb-24">
+                <div className="grid grid-cols-12 pt-24 lg:pt-36 pb-12 lg:pb-24">
 
                     <div className="col-span-12 lg:col-span-8 text-center lg:text-left px-8 xl:px-0 xl:pr-8">
-                        <h3 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide lg:mb-4"><InlineTextarea name="heading" /></h3>
+                        <h3 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide mb-12"><InlineTextarea name="heading" /></h3>
                         <div className="pb-16">
                             <InlineBlocks name="blocks" blocks={CONTENT_WITH_IMAGE_BLOCKS} />
                         </div>
@@ -22,7 +22,7 @@ export function ContentWithImageAlt(props) {
                     </div>
                     <div className="col-span-12 lg:col-span-4 relative flex flex-col-reverse lg:block">
                         {/* Image */}
-                        <div className="overflow-hidden w-full h-full relative">
+                        <div className="overflow-hidden w-full h-full relative max-w-xs mx-auto lg:max-w-full">
                             <InlineImage
                                 name="image.src"
                                 parse={media => media.id}

@@ -7,10 +7,11 @@ export function FeedVideo(props) {
 
     return(
         <>
-        <div className="w-full relative -mt-12 -mb-12 z-20 bg-cover bg-no-repeat" style={{ backgroundImage: `url('/images/feet-bg.png')`}}>
+        <div className="w-full relative -mt-12 -mb-12 z-20 bg-cover bg-no-repeat" style={{ backgroundImage: `url('/images/dirt-bg.png')`}}>
+            <div className="w-full h-screen absolute z-20 bg-cover bg-no-repeat" style={{ backgroundImage: `url('/images/chicken-feet.png')`}}></div>
             <div className="max-w-5xl mx-auto pt-12 pb-24 lg:pt-28 relative">
 
-                <div className="grid grid-cols-12 relative">
+                <div className="grid grid-cols-12 relative z-30">
                     <div className="col-span-12">
                         {/* Heading */}
                         <div className="text-3xl lg:text-7xl text-chinored font-ultra uppercase tracking-wide mb-8 text-center">
@@ -18,7 +19,7 @@ export function FeedVideo(props) {
                         </div>
                     </div>
                     {/* Video */}
-                    <div className="col-span-12">
+                    <div className="col-span-12 z-40">
                         <div className="border-8 border-white rounded">
                             <div className="aspect-w-16 aspect-h-9">
                                 <iframe src={props.video.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
