@@ -58,11 +58,9 @@ export const imageWithContentBlock = {
                 name: 'absoluteContent',
                 label: 'Absolute Positioned Content',
                 component: 'list',
-                fields: [
-                    {
+                field: {
                         component: 'text'
-                    }
-                ]
+                }
             },
             {
                 name: 'imageLeft',
