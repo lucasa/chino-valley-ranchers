@@ -37,7 +37,7 @@ export function FeedVideo(props) {
                 </div>
 
                 {/* Image */}
-                <div className="hidden xl:block xl:absolute -right-32 bottom-24 2xl:-right-52 2xl:bottom-48">
+                <div className="hidden xl:block xl:absolute -right-32 bottom-24 2xl:-right-52 2xl:bottom-48 z-40">
                     <img src={props.image.src} alt={props.image.alt} />
                 </div>
             </div>

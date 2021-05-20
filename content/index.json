@@ -3,7 +3,7 @@
     {
       "_template": "heroVideo",
       "heading": "Pasture Raised Products",
-      "image": "/images/hero-products.jpg"
+      "image": "/images/hero-home.jpg"
     },
     {
       "_template": "eggSlider",
@@ -176,6 +176,21 @@
         "link": "#",
         "text": "Learn More About Our Family"
       }
+    },
+    {
+      "_template": "recipesAndVideos",
+      "heading": "Recipes & Videos",
+      "content": "Find out more about what makes our eggs so special and learn to make mornings magical with great recipes and helpful tips from our eggs-perts!",
+      "videos": [
+        {
+          "title": "How to cook over medium eggs",
+          "src": "https://www.youtube.com/embed/XvsMf2yvGi4"
+        },
+        {
+          "title": "How to cook baked eggs",
+          "src": "https://www.youtube.com/embed/1TiZTB_uhCI"
+        }
+      ]
     }
   ]
 }

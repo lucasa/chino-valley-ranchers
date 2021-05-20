@@ -13,6 +13,7 @@ import { feedVideoBlock } from '../components/video/FeedVideo'
 import { contentWithImageAltBlock } from '../components/content/ContentWithImageAlt'
 import { imageWithContentBlock } from '../components/content/ImageWithContent'
 import { ourFamilyBlock } from '../components/content/OurFamily'
+import { recipesAndVideosBlock } from '../components/video/RecipesAndVideos'
 
 export default function Products({ file, isPreview }) {
 
@@ -63,7 +64,8 @@ const PAGE_BLOCKS = {
   feedVideo: feedVideoBlock,
   contentWithImageAlt: contentWithImageAltBlock,
   imageWithContent: imageWithContentBlock,
-  ourFamily: ourFamilyBlock
+  ourFamily: ourFamilyBlock,
+  recipesAndVideos: recipesAndVideosBlock
 }
 
 export const getStaticProps = async function({

@@ -10,8 +10,10 @@ import {
   TinacmsGithubProvider
 } from 'react-tinacms-github'
 import { NextGithubMediaStore } from 'next-tinacms-github'
+import { MarkdownFieldPlugin } from 'react-tinacms-editor'
 
 import { EditLink } from '../components/tinacms/EditLink'
+
 
 function MyApp({ Component, pageProps }) {
 
@@ -43,6 +45,8 @@ function MyApp({ Component, pageProps }) {
     sidebar: pageProps.preview,
     toolbar: pageProps.preview,
   })
+
+  cms.plugins.add(MarkdownFieldPlugin)
 
   return (
     <>

@@ -1,7 +1,13 @@
 import Image from 'next/image'
+import ReactMarkdown from 'react-markdown'
+
 import { InlineTextarea, InlineImage, BlocksControls } from 'react-tinacms-inline'
 
+import { InlineWysiwyg } from '../../components/tinacms/InlineWYSIWYG'
+
 export function HeroVideo(props) {
+
+    console.log(props)
 
     return(
 
@@ -33,7 +39,11 @@ export function HeroVideo(props) {
             </div>
 
             <div className="max-w-5xl mx-auto z-40 text-center">
-                <h1 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide"><InlineTextarea name="heading" /></h1>
+                <h1 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide">
+                    <InlineWysiwyg name="heading" format="markdown" sticky>
+                        <ReactMarkdown source={props.heading} />
+                    </InlineWysiwyg>
+                </h1>
             </div>
         </div>
 
@@ -54,7 +64,28 @@ export const heroVideoBlock = {
             image: '/images/hero-products.jpg'
         },
         fields: [
-
+            {
+                name: 'video',
+                label: 'Video',
+                component: 'group',
+                fields: [
+                    {
+                        name: 'src',
+                        label: 'src',
+                        component: 'text'
+                    }
+                ]
+            },
+            {
+                name: 'heading',
+                label: 'Heading',
+                component: 'text'
+            },
+            {
+                name: 'subheading',
+                label: 'Subheading',
+                component: 'text'
+            }
         ],
     },
 }
