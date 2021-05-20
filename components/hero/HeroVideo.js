@@ -41,7 +41,7 @@ export function HeroVideo(props) {
             <div className="max-w-5xl mx-auto z-40 text-center">
                 <h1 className="text-3xl lg:text-7xl text-white font-ultra uppercase tracking-wide">
                     <InlineWysiwyg name="heading" format="markdown" sticky>
-                        <ReactMarkdown source={props.heading} />
+                        <ReactMarkdown>{props.heading}</ReactMarkdown>
                     </InlineWysiwyg>
                 </h1>
             </div>
